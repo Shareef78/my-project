@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>PROGRESS TAG..1</h1>
+        The progress elements represents the completion progress of a task. The progress is either indeterminate, indicating that progress is being made but that it is not clear how much more remains to be done beforethe task is complete(e.g. because the task is wating for a remote host to respond), or the peogress is a number in the range zero to maximum, giving the fraction of work that has so far been completed.
+    </center>
+
+
+    <hr>
+<h1>Default progress</h1>
+<progress></progress>
+
+
+<hr><h1>progress tag with some attributes</h1>
+<h1>Staic progress</h1>
+<p>HTML <progress min="0" value="90" max="100"></progress></p><br>
+<p>HTML5 <progress min="0" value="85" max="100"></progress></p><br>
+<p>CSS <progress min="0" value="75" max="100"></progress></p><br>
+
+
+<h1>DYNAMIC PROGRESS BAR</h1>
+<progress min="0" max="100" value="1" id="pr1"></progress>
+<script>
+    let progressTAg1 =  document.getElementById('pr1');
+    function download(){
+        progressTAg1.value++;
+}
+setInterval('download()', 1000); //1000 =1s
+</script>
+</body>
+</html>
